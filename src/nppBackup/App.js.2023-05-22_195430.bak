@@ -4,17 +4,13 @@ import Content from "./components/content";
 import './App.css';
 
 const App=(props)=> {
-	const sections=[
-		"Tema",
-		"Problema",
-	]
 	return (
 		<div>
 			<header>
-			<Navigation sections={sections}/>
+			<Navigation/>
 			</header>
 			<main>
-				<Content sections={sections}/>
+				<Content/>
 			</main>
 		</div>
 	);

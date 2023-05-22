@@ -1,0 +1,31 @@
+import {useState} from "react";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import './App.css';
+
+function App() {
+	const [anchorEl, setAnchorEl]=useState(null);
+	const isOpen=Boolean(anchorEl);
+	const handleMenuClick=(event)=> {
+		setAnchorEl(event.currentTarget);
+	}
+	const handleMenuClose=()=> {
+		setAnchorEl(null);
+	}
+	return (
+		<div>
+			<header>
+			<Button>Testar</Button>
+			<br/>
+			<Button aria-controls="navigation-menu" aria-haspopup="true" aria-expanded={isOpen?true:false} onClick={handleMenuClick}>Navegação</Button>
+			<Menu id="navigation-menu" anchorEl={anchorEl} open={isOpen} onClose={handleMenuClose}>
+				<MenuItem onClick={handleMenuClose}>Tema</MenuItem>
+				<MenuItem onClick={handleMenuClose}>Problema</MenuItem>
+			</Menu>
+			</header>
+		</div>
+	);
+}
+
+export default App;

@@ -1,0 +1,23 @@
+import {useState} from "react";
+import Navigation from "./components/navigation";
+import './App.css';
+
+function App() {
+	const [anchorEl, setAnchorEl]=useState(null);
+	const isOpen=Boolean(anchorEl);
+	const handleMenuClick=(event)=> {
+		setAnchorEl(event.currentTarget);
+	}
+	const handleMenuClose=()=> {
+		setAnchorEl(null);
+	}
+	return (
+		<div>
+			<header>
+			<Navigation/>
+			</header>
+		</div>
+	);
+}
+
+export default App;
