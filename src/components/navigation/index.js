@@ -11,17 +11,18 @@ const Navigation=(props)=> {
 	const onMenuClose=(event)=> {
 		setAnchorEl(null);
 	}
-const onMenuClick=(event, index)=> {
-alert("Opção "+index+" selecionada! "+props.sections[index]);
-onMenuClose(event);
-}
+	const onMenuClick=(event, index)=> {
+		onMenuClose(event);
+		let headingElement=document.getElementById(props.sections[index]);
+		headingElement.focus();
+	}
 	return (
 		<nav>
 			<Button aria-controls="navigation-menu" aria-haspopup="true" aria-expanded={isOpen?true:false} onClick={handleButtonClick}>Navegação</Button>
 			<Menu id="navigation-menu" anchorEl={anchorEl} open={isOpen} onClose={onMenuClose} keepMounted>
 {props.sections.map((item, index)=> {
 return (
-<MenuItem onClick={(event)=>onMenuClick(event, index)}>{item}</MenuItem>
+<MenuItem key={item} onClick={(event)=>onMenuClick(event, index)}>{item}</MenuItem>
 )
 })};
 			</Menu>
