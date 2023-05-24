@@ -5,8 +5,9 @@ import './App.css';
 
 const App=(props)=> {
 	const sections=[
-		"Tema",
-		"Problema",
+		"tema",
+		"problema",
+"justificativa",
 	]
 	return (
 		<div>
@@ -14,7 +15,7 @@ const App=(props)=> {
 			<Navigation sections={sections}/>
 			</header>
 			<main>
-				<Content sections={sections}/>
+				<Content/>
 			</main>
 		</div>
 	);

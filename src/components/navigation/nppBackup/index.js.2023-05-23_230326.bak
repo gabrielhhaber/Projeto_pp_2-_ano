@@ -9,8 +9,8 @@ const Navigation=(props)=> {
 		<nav>
 			<List>
 				{props.sections.map((item, index)=> {
-					<ListItem>
-							<ListItemButton component="a" href="#test">
+					<ListItem disablePadding>
+							<ListItemButton component="a" href={"#"+item}>
 							<ListItemText primary={item}/>
 						</ListItemButton>
 					</ListItem>

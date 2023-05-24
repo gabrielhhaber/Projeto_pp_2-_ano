@@ -8,13 +8,13 @@ const Navigation=(props)=> {
 	return (
 		<nav>
 			<List>
-				{props.sections.map((item, index)=> {
-					<ListItem>
-							<ListItemButton component="a" href="#test">
-							<ListItemText primary={item}/>
-						</ListItemButton>
-					</ListItem>
-				})}
+			{props.sections.map((item, index)=> {
+				<ListItem disablePadding>
+					<ListItemButton component="a" href="#">
+						<ListItemText primary={item}/>
+					</ListItemButton>
+				</ListItem>
+				});}
 			</List>
 		</nav>
 	);
