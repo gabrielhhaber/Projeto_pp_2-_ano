@@ -9,13 +9,14 @@ const Navigation=(props)=> {
 		<nav>
 			<List>
 				{props.sections.map((item, index)=> {
-return (
-					<ListItem>
-							<ListItemButton component="a" href="#test">
-							<ListItemText primary={item}/>
-						</ListItemButton>
-					</ListItem>
-				);})
+					return (
+						<ListItem>
+								<ListItemButton component="a" href="#test">
+								<ListItemText primary={item}/>
+							</ListItemButton>
+						</ListItem>
+					);
+				})}
 			</List>
 		</nav>
 	);
