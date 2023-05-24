@@ -1,0 +1,24 @@
+import {useState} from "react";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+
+const Navigation=(props)=> {
+	return (
+		<nav>
+			<List>
+				{props.sections.map((item, index)=> {
+					return (
+						<ListItem>
+								<ListItemButton component="a" href="#test">
+								<ListItemText primary={item}/>
+							</ListItemButton>
+						</ListItem>
+					);
+				})}
+			</List>
+		</nav>
+	);
+}
+export default Navigation;

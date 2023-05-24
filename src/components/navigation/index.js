@@ -1,4 +1,5 @@
 import {useState} from "react";
+import Box from "@mui/material/box";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -6,19 +7,23 @@ import ListItemText from "@mui/material/ListItemText";
 
 const Navigation=(props)=> {
 	return (
-		<nav>
-			<List>
-				{props.sections.map((item, index)=> {
-					return (
-						<ListItem>
-								<ListItemButton component="a" href="#test">
-								<ListItemText primary={item}/>
-							</ListItemButton>
-						</ListItem>
-					);
-				})}
-			</List>
-		</nav>
+		<box sx={{width: "100%", maxWidth: 500}}>
+			<nav>
+				<List>
+					{props.sections.map((item, index)=> {
+						const headingId="#"+item;
+						const accesskey=item[0];
+						return (
+							<ListItem>
+									<ListItemButton component="a" href={headingId} accesskey={accesskey}>
+									<ListItemText primary={item}/>
+								</ListItemButton>
+							</ListItem>
+						);
+					})}
+				</List>
+			</nav>
+		</Box>
 	);
 }
 export default Navigation;
