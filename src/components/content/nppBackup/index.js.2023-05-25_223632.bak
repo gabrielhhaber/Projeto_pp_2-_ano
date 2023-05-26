@@ -6,11 +6,6 @@ const Content=(props)=> {
 			<Section title="Tema">
 				<p>Acessibilidade digital em sites e apps.</p>
 			</Section>
-			<Section title="Resumo">
-				<p>O principal objetivo deste projeto de pesquisa é analisar os fatores por trás da diminuição da acessibilidade de sites e aplicativos na internet, buscando formas de interromper essa queda e conscientizar as empresas sobre a importância desse tema, promovendo uma web mais diversificada e inclusiva.</p>
-				<p>O projeto analisou diversos fatores históricos relacionados ao funcionamento da web, comparando a forma em que os sites eram desenvolvidos antigamente com as tendências e tecnologias do momento. Também foram consideradas diversas mudanças no setor de tecnologia nos últimos anos, como a ascensão dos smartphones, a popularização da inteligência artificial, o desenvolvimento de ferramentas automatizadas para a criação de sites, a falta de investimento em acessibilidade por parte das empresas, entre outros. Também foram investigados os principais motivos que levam as empresas a não investir em acessibilidade digital, como a falta de resultados significativos a curto prazo, a falta de conhecimento sobre o tema, entre outros.</p>
-				<p>Como forma de tentar diminuir o impacto e dimensão dos problemas encontrados na pesquisa, foi criada a ideia de um portal de avaliação da acessibilidade de diversos sites e apps distintos, com o objetivo de premiar empresas que apresentem interesse e comprometimento na área, além de fornecer uma maneira fácil para que os usuários encontrem plataformas adequadas ao seu uso. O objetivo é incentivar empresas a realizar esforços na área, além de reconhecer esforços que já estão sendo realizados.</p>
-			</Section>
 			<Section title="Problema">
 				<p>Por que a acessibilidade digital tem diminuído em muitas plataformas e como isso pode ser revertido?</p>
 			</Section>

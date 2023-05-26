@@ -6,6 +6,7 @@ import './App.css';
 const App=(props)=> {
 	const sections=[
 		"tema",
+"resumo",
 		"problema",
 "justificativa",
 	]
@@ -13,6 +14,7 @@ const App=(props)=> {
 		<div>
 			<header>
 				<h1 id="top">Diminuição da acessibilidade em sites e apps: por quê?</h1>
+<p>Por Gabriel Haberkamp</p>
 			<Navigation sections={sections}/>
 			</header>
 			<main>
