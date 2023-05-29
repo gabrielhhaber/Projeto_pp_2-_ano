@@ -1,5 +1,5 @@
 import {useState} from "react";
-import Box from "@mui/material/box";
+import Box from "@mui/material/Box";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -7,7 +7,7 @@ import ListItemText from "@mui/material/ListItemText";
 
 const Navigation=(props)=> {
 	return (
-		<box sx={{width: "100%", maxWidth: 500}}>
+		<Box sx={{width: "100%", maxWidth: 500}}>
 			<nav>
 				<List>
 					{props.sections.map((item, index)=> {
@@ -22,8 +22,8 @@ const Navigation=(props)=> {
 						);
 					})}
 				</List>
-			</Box>
-		</nav>
+			</nav>
+		</Box>
 	);
 }
 export default Navigation;

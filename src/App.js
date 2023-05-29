@@ -6,9 +6,13 @@ import './App.css';
 const App=(props)=> {
 	const sections=[
 		"tema",
-"resumo",
+		"resumo",
 		"problema",
-"justificativa",
+		"justificativa",
+		"objetivos",
+		"referencial teórico",
+		"metodologia",
+"Conclusões parciais",
 	]
 	return (
 		<div>
