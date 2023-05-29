@@ -22,8 +22,8 @@ const Navigation=(props)=> {
 						);
 					})}
 				</List>
-			</Box>
-		</nav>
+			</nav>
+		</Box>
 	);
 }
 export default Navigation;
