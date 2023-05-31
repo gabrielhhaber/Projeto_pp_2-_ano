@@ -12,7 +12,7 @@ const App=(props)=> {
 		"objetivos",
 		"referencial teórico",
 		"metodologia",
-"Conclusões parciais",
+		"conclusões parciais",
 	]
 	return (
 		<div>

@@ -7,20 +7,39 @@ import ListItemText from "@mui/material/ListItemText";
 
 const Navigation=(props)=> {
 	return (
-		<Box sx={{width: "100%", maxWidth: 500}}>
+		<Box sx={{width: "50%", maxWidth: 250}}>
 			<nav>
 				<List>
 					{props.sections.map((item, index)=> {
 						const headingId="#"+item;
-						const accesskey=item[0];
+						let accesskey;
+						if(item.includes(" ")) {
+							const itemWords=item.split(" ");
+							const secondWord=itemWords[1];
+							accesskey=secondWord[0];
+						}
+						else {
+							accesskey=item[0];
+						}
 						return (
 							<ListItem>
 									<ListItemButton component="a" href={headingId} accesskey={accesskey}>
-									<ListItemText primary={item}/>
+									<ListItemText>
+									{item}
+									<span className="link-shortcut-key" aria-hidden="true"> (alt+{accesskey})</span>
+								</ListItemText>
 								</ListItemButton>
 							</ListItem>
 						);
 					})}
+					<ListItem>
+						<ListItemButton component="a" href="/Referencias.html" accesskey="n" target="_blank">
+							<ListItemText>
+								Referências (abre em uma nova guia)
+								<span className="link-shortcut-key" aria-hidden="true"> (Alt+n)</span>
+							</ListItemText>
+						</ListItemButton>
+					</ListItem>
 				</List>
 			</nav>
 		</Box>
