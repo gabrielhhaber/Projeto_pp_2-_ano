@@ -6,6 +6,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 
 const Navigation=(props)=> {
+	let accesskeys=[];
 	return (
 		<Box sx={{width: "50%", maxWidth: 250}}>
 			<nav>
@@ -13,7 +14,8 @@ const Navigation=(props)=> {
 					{props.sections.map((item, index)=> {
 						const headingId="#"+item;
 						let accesskey;
-						if(item.includes(" ")) {
+						let firstLetter=item[0];
+						if(item.includes(" ")&&accesskeys.includes(firstLetter)) {
 							const itemWords=item.split(" ");
 							const secondWord=itemWords[1];
 							accesskey=secondWord[0];
@@ -21,6 +23,7 @@ const Navigation=(props)=> {
 						else {
 							accesskey=item[0];
 						}
+						accesskeys.push(accesskey);
 						return (
 							<ListItem>
 									<ListItemButton component="a" href={headingId} accesskey={accesskey}>
