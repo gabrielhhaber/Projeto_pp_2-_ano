@@ -37,8 +37,6 @@ const Content=(props)=> {
 					<li>Valorizar o esforço e dedicação de empresas que se preocupam com a acessibilidade de alguma forma, como com uma premiação para os desenvolvedores com maiores porcentagens. Nem todas as empresas se preocupam com isso, e é importante reconhecer quem está se esforçando em tornar sua plataforma inclusiva.</li>
 				</ol>
 			</Section>
-			<Section title="Referencial teórico">
-			</Section>
 			<Section title="Metodologia">
 			</Section>
 			<Section title="Conclusões parciais">

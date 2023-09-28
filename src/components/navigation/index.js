@@ -36,7 +36,15 @@ const Navigation=(props)=> {
 						);
 					})}
 					<ListItem>
-						<ListItemButton component="a" href="/Referencias.html" accesskey="n" target="_blank">
+						<ListItemButton component="a" href="referencial_teorico.html" accesskey="t" target="_blank">
+							<ListItemText>
+								Referencial teórico (abre em uma nova guia)
+								<span className="link-shortcut-key" aria-hidden="true">(alt+t)</span>
+							</ListItemText>
+						</ListItemButton>
+					</ListItem>
+					<ListItem>
+						<ListItemButton component="a" href="referencias.html" accesskey="n" target="_blank">
 							<ListItemText>
 								Referências (abre em uma nova guia)
 								<span className="link-shortcut-key" aria-hidden="true"> (Alt+n)</span>
