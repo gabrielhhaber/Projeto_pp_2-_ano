@@ -1,4 +1,4 @@
-import {useState, useEffect} from "react";
+import {useEffect} from "react";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
@@ -10,16 +10,17 @@ const NavLink=(props)=> {
 		"Problema": "p",
 		"Justificativa": "j",
 		"Objetivos": "o",
-		"referencial teórico abre em uma nova guia": "i",
+		"Referencial teórico abre em uma nova guia": "i",
 		"Metodologia": "m",
 		"Conclusões parciais": "c",
-		"referências abre em uma nova guia": "n",
+		"Referências abre em uma nova guia": "n",
 	}
-	const idText=text.toLowerCase().replace("(", "").replace(")", "");
+	const idText=text.replace("(", "").replace(")", "");
 	const shortcutKey=shortcutKeys[idText];
 	useEffect(()=> {
 		document.addEventListener("keydown", (evt)=> {
 			if(evt.altKey&&(evt.key==shortcutKey)) {
+				evt.preventDefault();
 				const linkElements=Array.from(document.getElementsByTagName("a"));
 				const sectionNames=[];
 				for(let property in shortcutKeys) {

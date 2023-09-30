@@ -1,4 +1,3 @@
-import {useState} from "react";
 import Section from "../section";
 const Content=(props)=> {
 	return (

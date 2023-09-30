@@ -1,4 +1,3 @@
-import {useState} from "react";
 import "./section.css";
 const Section=(props)=> {
 	const sectionId=props.title.toLowerCase();
