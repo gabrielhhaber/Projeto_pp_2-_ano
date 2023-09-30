@@ -1,0 +1,15 @@
+import {useState} from "react";
+const NavLink=(props)=> {
+	const [text, href, accesskey]=...props;
+	return (
+		<ListItem>
+			<ListItemButton component="a" href={href} accesskey={accesskey}>
+				<ListItemText>
+					{text}
+					<span className="link-shortcut-key" aria-hidden="true">(alt+{accesskey})</span>
+				</ListItemText>
+			</ListItemButton>
+		</ListItem>
+	);
+}
+export default NavLink;

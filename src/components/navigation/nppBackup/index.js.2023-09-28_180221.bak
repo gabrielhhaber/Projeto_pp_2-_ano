@@ -1,0 +1,39 @@
+import {useState, useEffect} from "react";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+	import NavLink from "../nav_link";
+
+const Navigation=(props)=> {
+	useEffect(()=> {
+		const navLinks=Array.from(document.getElementsByClassName("nav-link"));
+		document.addEventListener("keydown", (evt)=> {
+			if(evt.altKey) {
+				navLinks.forEach((navLink)=> {
+					const shortcutKey=navLink.props.shortcutKey;
+					if(evt.key==shortcutKey) {
+						navLink.click();
+					}
+				});
+			}
+			});
+	});
+
+	return (
+		<Box sx={{width: "50%", maxWidth: 250}}>
+			<nav>
+				<List>
+					<NavLink text="Tema" href="#tema" shortcutKey="t"/>
+					<NavLink text="Resumo" href="#resumo" shortcutKey="r"/>
+					<NavLink text="Problema" href="#problema" shortcutKey="p"/>
+					<NavLink text="Justificativa" href="#justificativa" shortcutKey="j"/>
+					<NavLink text="Objetivos" href="#objetivos" shortcutKey="o"/>
+					<NavLink text="Referencial teórico (abre em uma nova guia)" href="/referencial_teorico.html" target="_blank" shortcutKey="t"/>
+					<NavLink text="Metodologia" href="#metodologia" shortcutKey="m"/>
+					<NavLink text="Conclusões parciais" href="#conclusoes-parciais" shortcutKey="c"/>
+					<NavLink text="Referências (abre em uma nova guia)" href="/referencias.html" target="_blank" shortcutKey="f"/>
+				</List>
+			</nav>
+		</Box>
+	);
+}
+export default Navigation;

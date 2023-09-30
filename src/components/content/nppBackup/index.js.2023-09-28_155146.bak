@@ -38,13 +38,8 @@ const Content=(props)=> {
 				</ol>
 			</Section>
 			<Section title="Metodologia">
-				<p>Criar um site/portal de avaliação da acessibilidade de sites/apps.</p>
-				<p>Nesse portal, diversos sites e apps criados por empresas serão avaliados quanto à acessibilidade. As empresas poderão entrar em contato para receber uma avaliação, mas, caso identificarmos um caso que se destaque, seja ele positivo ou negativo, poderemos entrar em contato com a empresa e perguntar se podemos realizar uma avaliação. Todas as partes do site ou aplicativo serão avaliadas, e com base nos resultados obtidos será dada uma nota, que poderá variar de 0 a 10.</p>
-				<p>Quando a avaliação de um determinado site ou app estiver completa, será publicado um relatório com diversas informações (quais pontos foram avaliados especificamente, o que foi identificado de positivo/negativo, o que precisa de atenção urgente, entre outros). Esse relatório, então, será enviado à empresa, e iremos acompanhando a sua evolução e as mudanças que estão sendo feitas. Caso notarmos que a empresa está se destacando e mostrou compromisso com o tema da acessibilidade, ela receberá um selo, chamado “Selo de Valorização ao Usuário), mostrando que ela valoriza todos os seus clientes.</p>
-				<p>Buscando proporcionar avaliações completas e abrangentes a todas as empresas envolvidas, será montada uma equipe composta por pessoas com diferentes tipos de deficiência, buscando estudar a qualidade e usabilidade do site ou app de diferentes perspectivas. Se o projeto crescer, será feita uma parceria com alguma empresa do ramo de Inteligência Artificial, buscando treinar um modelo que possa avaliar todos os sites e apps da mesma forma que uma pessoa faria, de modo a atender a essa maior demanda.</p>
 			</Section>
 			<Section title="Conclusões parciais">
-				<p>Com a posterior realização e implementação deste projeto de pesquisa, espera-se que, em geral, as empresas levem mais o tema da acessibilidade digital em consideração e, assim, tragam experiências de uso melhores a todos os seus clientes, independente da existência de qualquer tipo de deficiência. Além disso espera-se que, ao longo do tempo, a web se torne um local mais acessível e inclusivo, de modo que esse tema seja mais disseminado e as empresas valorizem todos os seus clientes.</p>
 			</Section>
 		</div>
 	);

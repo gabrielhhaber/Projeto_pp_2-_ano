@@ -1,0 +1,39 @@
+import {useState, useEffect} from "react";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+const NavLink=(props)=> {
+	const {text, href, target}=props;
+	useEffect(()=> {
+		const shortcutKeys={
+		"tema": "t",
+		"resumo": "r",
+		"problema": "p",
+		"justificativa": "j",
+		"objetivos": "o",
+		"Referencial teórico": "r",
+		"Metodologia": "m",
+		"Conclusões parciais": "c",
+		"Referências (abre em uma nova guia)": "f",
+	}
+		document.addEventListener("keyDown", (evt)=> {
+			const shortcutKey=shortcutKeys[text];
+			if(evt.altKey&&(evt.key==shortcutKey)) {
+				alert(text);
+			}
+		});
+	});
+	return (
+		<div className="nav-link">
+		<ListItem>
+			<ListItemButton component="a" href={href} target={target}>
+				<ListItemText>
+					{text}
+				</ListItemText>
+			</ListItemButton>
+		</ListItem>
+	</div>
+	);
+	};);
+};
+export default NavLink;

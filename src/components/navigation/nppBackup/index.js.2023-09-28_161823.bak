@@ -1,0 +1,26 @@
+import {useState} from "react";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+	import NavLink from "../nav_link";
+
+const Navigation=(props)=> {
+		const navLinks=document.getElementsByClassName("nav-link");
+	return (
+		<Box sx={{width: "50%", maxWidth: 250}}>
+			<nav>
+				<List>
+					<NavLink text="Tema" href="#tema" accesskey="t"/>
+					<NavLink text="Resumo" href="#resumo" accesskey="r"/>
+					<NavLink text="Problema" href="#problema" accesskey="p"/>
+					<NavLink text="Justificativa" href="#justificativa" accesskey="j"/>
+					<NavLink text="Objetivos" href="#objetivos" accesskey="o"/>
+					<NavLink text="Referencial teórico (abre em uma nova guia)" href="/referencial_teorico.html" accesskey="t" target="_blank"/>
+					<NavLink text="Metodologia" href="#metodologia" accesskey="m"/>
+					<NavLink text="Conclusões parciais" href="#conclusoes-parciais" accesskey="c"/>
+					<NavLink text="Referências (abre em uma nova guia)" href="/referencias.html" accesskey="f" target="_blank"/>
+				</List>
+			</nav>
+		</Box>
+	);
+}
+export default Navigation;

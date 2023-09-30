@@ -1,0 +1,27 @@
+import {useState} from "react";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+const NavLink=(props)=> {
+	const {text, href, shortcutKey, target}=props;
+	const onKeyDown=(evt)=> {
+		const eventObject=evt.target;
+		if(evt.altKey) {
+			if(evt.key==shortcutKey) {
+				eventObject.click();
+			}
+		}
+	}
+	return (
+		<div className="nav-link">
+		<ListItem>
+			<ListItemButton component="a" href={href} target={target} onKeyDown={onKeyDown}>
+				<ListItemText>
+					{text}
+				</ListItemText>
+			</ListItemButton>
+		</ListItem>
+	</div>
+	);
+}
+export default NavLink;

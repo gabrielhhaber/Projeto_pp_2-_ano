@@ -1,0 +1,18 @@
+import {useState} from "react";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+const NavLink=(props)=> {
+	const {text, href, accesskey}=props;
+	return (
+		<ListItem>
+			<ListItemButton component="a" href={href} accesskey={accesskey}>
+				<ListItemText>
+					{text}
+					<span className="link-shortcut-key" aria-hidden="true">(alt+{accesskey})</span>
+				</ListItemText>
+			</ListItemButton>
+		</ListItem>
+	);
+}
+export default NavLink;

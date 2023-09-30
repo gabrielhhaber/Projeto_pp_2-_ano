@@ -1,0 +1,19 @@
+import {useState} from "react";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+const NavLink=(props)=> {
+	const {text, href, shortcutKey, target}=props;
+	return (
+		<div class="nav-link">
+		<ListItem>
+			<ListItemButton component="a" href={href} target={target}>
+				<ListItemText>
+					{text}
+				</ListItemText>
+			</ListItemButton>
+		</ListItem>
+	</div>
+	);
+}
+export default NavLink;
