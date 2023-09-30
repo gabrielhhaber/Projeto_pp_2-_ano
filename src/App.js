@@ -1,4 +1,3 @@
-import {useState} from "react";
 import Navigation from "./components/navigation";
 import Content from "./components/content";
 import './App.css';

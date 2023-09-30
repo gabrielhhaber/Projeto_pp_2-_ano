@@ -20,7 +20,8 @@ const NavLink=(props)=> {
 	const shortcutKey=shortcutKeys[idText];
 	useEffect(()=> {
 		const onKeyDown=function(evt) {
-			if(evt.altKey&&(evt.key===shortcutKey)) {
+			if(evt.altKey&&(evt.key==shortcutKey)) {
+				alert("oi!");
 				evt.preventDefault();
 				const linkElements=Array.from(document.getElementsByTagName("a"));
 				const keyNames=[];

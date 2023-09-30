@@ -3,8 +3,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 const NavLink=(props)=> {
-	const {text, href}=props;
-	const target=props.target?props.target:"_self";
+	const {text, href, target}=props;
 		const shortcutKeys={
 		"Tema": "t",
 		"Resumo": "r",
@@ -19,23 +18,19 @@ const NavLink=(props)=> {
 	const idText=text.replace("(", "").replace(")", "");
 	const shortcutKey=shortcutKeys[idText];
 	useEffect(()=> {
-		const onKeyDown=function(evt) {
-			if(evt.altKey&&(evt.key===shortcutKey)) {
+		document.addEventListener("keydown", (evt)=> {
+			if(evt.altKey&&(evt.key==shortcutKey)) {
 				evt.preventDefault();
 				const linkElements=Array.from(document.getElementsByTagName("a"));
-				const keyNames=[];
+				const sectionNames=[];
 				for(let property in shortcutKeys) {
-					keyNames.push(shortcutKeys[property]);
+					sectionNames.push(shortcutKeys[property]);
 				}
-				const linkIndex=keyNames.indexOf(shortcutKey);
+				const linkIndex=sectionNames.indexOf(shortcutKey);
 				const sectionLink=linkElements[linkIndex];
 				sectionLink.click();
 			}
-		};
-		document.addEventListener("keydown", onKeyDown);
-		return ()=> {
-			document.removeEventListener("keydown", onKeyDown);
-		};
+		});
 	});
 	return (
 		<ListItem>
@@ -47,5 +42,5 @@ const NavLink=(props)=> {
 			</ListItemButton>
 		</ListItem>
 	);
-};
+}
 export default NavLink;

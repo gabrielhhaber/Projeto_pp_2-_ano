@@ -19,8 +19,9 @@ const NavLink=(props)=> {
 	const idText=text.replace("(", "").replace(")", "");
 	const shortcutKey=shortcutKeys[idText];
 	useEffect(()=> {
-		const onKeyDown=function(evt) {
-			if(evt.altKey&&(evt.key===shortcutKey)) {
+		document.addEventListener("keydown", (evt)=> {
+			alert("oi!");
+			if(evt.altKey&&(evt.key==shortcutKey)) {
 				evt.preventDefault();
 				const linkElements=Array.from(document.getElementsByTagName("a"));
 				const keyNames=[];
@@ -31,11 +32,7 @@ const NavLink=(props)=> {
 				const sectionLink=linkElements[linkIndex];
 				sectionLink.click();
 			}
-		};
-		document.addEventListener("keydown", onKeyDown);
-		return ()=> {
-			document.removeEventListener("keydown", onKeyDown);
-		};
+		});
 	});
 	return (
 		<ListItem>
@@ -47,5 +44,5 @@ const NavLink=(props)=> {
 			</ListItemButton>
 		</ListItem>
 	);
-};
+}
 export default NavLink;
