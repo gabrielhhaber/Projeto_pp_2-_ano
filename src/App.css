@@ -4,4 +4,19 @@ background-color: #90ee90;
 
 h1 {
 text-align: center;
+font-size: 2.5rem;
+color: green;
+}
+p.author {
+	color: #3299CC;
+}
+.visually-hidden {
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	margin: -1px;
 }

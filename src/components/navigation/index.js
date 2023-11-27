@@ -12,10 +12,11 @@ const Navigation=(props)=> {
 					<NavLink text="Problema" href="#problema"/>
 					<NavLink text="Justificativa" href="#justificativa"/>
 					<NavLink text="Objetivos" href="#objetivos"/>
-					<NavLink text="Referencial teórico (abre em uma nova guia)" href="referencial_teorico.html" target="_blank"/>
+					<NavLink text="Referencial teórico resumido" href="#referencial-teorico-resumido"/>
 					<NavLink text="Metodologia" href="#metodologia"/>
 					<NavLink text="Conclusões parciais" href="#conclusoes-parciais"/>
-					<NavLink text="Referências (abre em uma nova guia)" href="referencias.html" target="_blank"/>
+					<NavLink text="Referências resumidas" href="#referencias-resumidas"/>
+					<NavLink text="Projeto completo em formato Word (abre em uma nova guia)" href="https://senacrsedu-my.sharepoint.com/:w:/g/personal/04122736080_senacrs_edu_br/EeWgSwG-6HhMtJzH_bHa1mwBLvd5OU9mMR5ADm15j6Ujsg?e=IuDYkR" target="_blank"/>
 				</List>
 			</nav>
 		</Box>

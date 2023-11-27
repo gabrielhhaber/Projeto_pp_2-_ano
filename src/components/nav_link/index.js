@@ -11,10 +11,11 @@ const NavLink=(props)=> {
 		"Problema": "p",
 		"Justificativa": "j",
 		"Objetivos": "o",
-		"Referencial teórico abre em uma nova guia": "i",
+		"Referencial teórico resumido": "i",
 		"Metodologia": "m",
 		"Conclusões parciais": "c",
-		"Referências abre em uma nova guia": "n",
+		"Referências resumidas": "n",
+		"Projeto completo em formato Word abre em uma nova guia": "w",
 	}
 	const idText=text.replace("(", "").replace(")", "");
 	const shortcutKey=shortcutKeys[idText];
@@ -42,7 +43,7 @@ const NavLink=(props)=> {
 			<ListItemButton component="a" href={href} target={target}>
 				<ListItemText>
 					{text}
-					<span className="link-shortcut-key">(alt+{shortcutKey})</span>
+					<span className="link-shortcut-key visually-hidden">(alt+{shortcutKey})</span>
 				</ListItemText>
 			</ListItemButton>
 		</ListItem>
