@@ -16,7 +16,8 @@ const Navigation=(props)=> {
 					<NavLink text="Metodologia" href="#metodologia"/>
 					<NavLink text="Conclusões parciais" href="#conclusoes-parciais"/>
 					<NavLink text="Referências resumidas" href="#referencias-resumidas"/>
-					<NavLink text="Projeto completo em formato Word (abre em uma nova guia)" href="https://senacrsedu-my.sharepoint.com/:w:/g/personal/04122736080_senacrs_edu_br/EeWgSwG-6HhMtJzH_bHa1mwBLvd5OU9mMR5ADm15j6Ujsg?e=IuDYkR" target="_blank"/>
+					<NavLink text="Projeto completo em formato PDF (abre em uma nova guia)" href="projeto_de_pesquisa_acessibilidade_digital.pdf" target="_blank"/>
+					<NavLink text="Wireframe do projeto em formato PDF (abre em uma nova guia)" href="wireframe_do_projeto_sobre_acessibilidade_digital.pdf" target="_blank"/>
 				</List>
 			</nav>
 		</Box>

@@ -15,7 +15,8 @@ const NavLink=(props)=> {
 		"Metodologia": "m",
 		"Conclusões parciais": "c",
 		"Referências resumidas": "n",
-		"Projeto completo em formato Word abre em uma nova guia": "w",
+		"Projeto completo em formato PDF abre em uma nova guia": "f",
+		"Wireframe do projeto em formato PDF abre em uma nova guia": "w"
 	}
 	const idText=text.replace("(", "").replace(")", "");
 	const shortcutKey=shortcutKeys[idText];
