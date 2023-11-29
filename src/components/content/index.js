@@ -49,7 +49,7 @@ const Content=(props)=> {
 					<p>(Em tradução livre: “Acessibilidade digital é a prática e a mentalidade de projetar tecnologias utilizáveis pelo maior público possível. À medida que a tecnologia se torna cada vez mais arraigada em nossas vidas diárias, é de suma importância que implementemos tecnologias que apoiem a missão da universidade de promover a igualdade e a diversidade.”)</p>
 				<p>Unindo as duas definições, podemos concluir que a acessibilidade digital é uma prática que se destina a permitir acesso igualitário entre todas as pessoas, independente das suas limitações e em qualquer tipo de tecnologia, como sites, aplicativos, ferramentas digitais e até mesmo equipamentos físicos. Embora a acessibilidade digital foque principalmente nas pessoas com deficiência, ela também se aplica a pessoas idosas ou com outros tipos de dificuldade, ou mesmo uma dificuldade temporária (.</p>
 				<h3>Por que esse tema precisa receber mais atenção?</h3>
-				<p>Uma pesquisa conduzida pela Big Data Corp e pelo Movimento Web para Todos (MWPT), durante 2022, avaliou 21 milhões de sites ativos no Brasil. Deles, apenas 0,46% tiveram sucesso em todos os critérios avaliados. Isso mostra uma diminuição de 0,43% em relação à edição anterior, realizada em 2021.</p>
+				<p>Uma pesquisa conduzida pela Big Data Corp e pelo Movimento Web para Todos (MWPT), durante 2022, avaliou 21 milhões de sites ativos no Brasil. Deles, apenas 0,46% tiveram sucesso em todos os critérios avaliados. Isso mostra uma diminuição de 0,43% em relação à edição anterior, realizada em 2021, em que o número de sites acessíveis havia aumentado.</p>
  <p>De acordo com a MWPT (2022), isso se deve principalmente ao crescimento de sites ativos, sobretudo os pequenos, nos quais a preocupação com a acessibilidade pode ser menor. O CEO da BigDataCorp, Thoran Rodrigues (Big Data Corp, 2022), afirma que, conforme aumenta a complexidade dos sites e da navegação, a tendência de testes falharem fica cada vez maior.</p>
 				<h3>Quais acontecimentos estão influenciando a acessibilidade digital e de que formas?</h3>
 				<h4>Mudanças na web</h4>
@@ -109,13 +109,26 @@ const Content=(props)=> {
 			<Section title="Referências resumidas">
 				<p>Estas referências não dizem respeito à todas as pesquisas realizadas no projeto, mas sim apenas às contidas neste site. Para ler todas as referências, <a href="projeto_de_pesquisa_acessibilidade_digital.pdf" target="_blank">Acesse o documento com o projeto completo (abre em uma nova guia)</a>.</p>
 				<p>BRASIL. Governo Federal Brasileiro. <b>Acessibilidade Digital.</b> 200?. Disponível em: <a href="https://www.gov.br/governodigital/pt-br/acessibilidade-digital">https://www.gov.br/governodigital/pt-br/acessibilidade-digital</a>. Acesso em: 16/05/2023.</p>
+				<br/>
 				<p>UO. University of Oregon, EUA. <b>What is digital accessibility</b>. 200? Disponível em: <a href="https://digitalaccessibility.uoregon.edu/about/whatisda">https://digitalaccessibility.uoregon.edu/about/whatisda</a>. Acesso em: 17/05/2023.</p>
+				<br/>
+				<p>MWPT, Movimento Web para Todos; BigDataCorp. <b>Número de sites brasileiros aprovados em todos os testes de acessibilidade tem queda em relação ao ano passado e é ainda menor que 1%</b>. 2022. Disponível em: https://mwpt.com.br/numero-de-sites-brasileiros-aprovados-em-todos-os-testes-de-acessibilidade-tem-queda-em-relacao-ao-ano-passado-e-e-ainda-menor-que-1/. Acesso em: 17/05/2023.
+				<br/>
+				<p>MWPT, Movimento Web para Todos; Big Data Corp. <b>Número de sites brasileiros aprovados em todos os testes de acessibilidade mantém crescimento, mas ainda é menos de 1% do total</b>. 22 de julho de 2021. Disponível em: <a href="https://mwpt.com.br/numero-de-sites-brasileiros-aprovados-em-todos-os-testes-de-acessibilidade-mantem-crescimento-mas-ainda-e-menos-de-1-do-total/">https://mwpt.com.br/numero-de-sites-brasileiros-aprovados-em-todos-os-testes-de-acessibilidade-mantem-crescimento-mas-ainda-e-menos-de-1-do-total/</a>. Acesso em: 29 de novembro de 2023.</p>
+				<br/>
 				<p>TWITTER, Dev. <b>We will no longer support free access to the Twitter API, both v2 and v1.1.</b> 2 de fevereiro de 2023. Disponível em: <a href="https://twitter.com/TwitterDev/status/1621026986784337922">https://twitter.com/TwitterDev/status/1621026986784337922</a>. Acesso em: 29/05/2023.</p>
+				<br/>
 				<p>GONSALVES, Odilon. MWPT. <b>Carrosséis em sites são inimigos da acessibilidade?</b> 22 de novembro de 2021. Disponível em: <a href="https://mwpt.com.br/carrosseis-em-sites-sao-inimigos-da-acessibilidade/">https://mwpt.com.br/carrosseis-em-sites-sao-inimigos-da-acessibilidade/</a>. Acesso em: 31/05/2023.</p>
+				<br/>
 				<p>Fundação Getúlio Vargas (FGV). <b>Panorama do Uso de TI no Brasil - 2022.</b> Junho de 2022. Disponível em: <a href="https://portal.fgv.br/artigos/panorama-uso-ti-brasil-2022">https://mwpt.com.br/carrosseis-em-sites-sao-inimigos-da-acessibilidade/</a>. Acesso em: 04/06/2023.</p>
+				<br/>
 				<p>FILHO, A. G. T. S. SANTOS, G. M. <b>A Ampliação da percepção da interface para pessoas com deficiência visual através de recursos em smartphones: Uma perspectiva do design da informação sobre a acessibilidade digital.</b> Setembro de 2015. Disponível em: <a href="https://www.academia.edu/download/38997604/A_ampliacao_da_percepcao_da_interface_para_pessoas_com_deficiencia_visual_atraves_de_recursos_em_smartphones.pdf">https://www.academia.edu/download/38997604/A_ampliacao_da_percepcao_da_interface_para_pessoas_com_deficiencia_visual_atraves_de_recursos_em_smartphones.pdf</a>. Acesso em: 06/06/2023.</p>
+				<br/>
 			</Section>
-			<iframe id="mockup-preview" src="https://senacscs.github.io/t2/gabriel/mockup_rastreador_de_acessibilidade/index.html" title="Mockup do site criado no projeto"></iframe>
+			<Section title="Mockup do projeto">
+				<p>Este mockup foi criado antes da última mudança de nome do projeto. Assim, o nome do projeto está diferente nas páginas dele.</p>
+				<iframe id="mockup-preview" src="https://senacscs.github.io/t2/gabriel/mockup_rastreador_de_acessibilidade/index.html" title="Mockup do site criado no projeto"></iframe>
+			</Section>
 		</div>
 	);
 }
