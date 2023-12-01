@@ -3,23 +3,23 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 const NavLink=(props)=> {
-	const {text, href}=props;
+	const {id, text, href}=props;
 	const target=props.target?props.target:"_self";
 		const shortcutKeys={
-		"Tema": "t",
-		"Resumo": "r",
-		"Problema": "p",
-		"Justificativa": "j",
-		"Objetivos": "o",
-		"Referencial teórico resumido": "i",
-		"Metodologia": "m",
-		"Conclusões parciais": "c",
-		"Referências resumidas": "n",
-		"Projeto completo em formato PDF abre em uma nova guia": "f",
-		"Wireframe do projeto em formato PDF abre em uma nova guia": "w"
+		"tema": "t",
+		"resumo": "r",
+		"problema": "p",
+		"justificativa": "j",
+		"objetivos": "o",
+		"referencial-teorico-resumido": "i",
+		"metodologia": "m",
+		"conclusoes-parciais": "c",
+		"referencias-resumidas": "n",
+		"projeto-completo": "f",
+		"wireframe": "w",
+		"mockup": "k"
 	}
-	const idText=text.replace("(", "").replace(")", "");
-	const shortcutKey=shortcutKeys[idText];
+	const shortcutKey=shortcutKeys[id];
 	useEffect(()=> {
 		const onKeyDown=function(evt) {
 			if(evt.altKey&&(evt.key===shortcutKey)) {
