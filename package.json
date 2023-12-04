@@ -1,7 +1,7 @@
 {
   "name": "projeto_pp_2_ano",
   "version": "0.1.0",
-  "homepage": "https://senacscs.github.io/t2/gabriel/projeto_pp",
+  "homepage": "https://senacscs.github.io/t2/gabriel/segundo/projeto_pp",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.0",
