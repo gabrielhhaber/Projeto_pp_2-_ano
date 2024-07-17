@@ -6,7 +6,7 @@ const App=(props)=> {
 	return (
 		<div>
 			<header>
-				<h1 id="top">Accessibling. Construindo uma web mais acessível e inclusiva</h1>
+				<h1 id="top">ACCESSIBLING: dando voz à acessibilidade digital.</h1>
 <p className="author">Por Gabriel Haberkamp</p>
 			<Navigation/>
 			</header>
