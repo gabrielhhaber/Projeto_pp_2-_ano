@@ -1,0 +1,13 @@
+ListItemButton {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 8px;
+	transition: background-color 0.3s ease;
+}
+ListItemButton:hover {
+	background-color: #e2e6ea;
+}
+ListItemText {
+	font-size: 1.1em;
+	color: #333;
+}

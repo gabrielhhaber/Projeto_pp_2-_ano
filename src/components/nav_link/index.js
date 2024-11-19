@@ -2,6 +2,7 @@ import {useEffect} from "react";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
+import "./nav-link.css";
 const NavLink=(props)=> {
 	const {id, text, href}=props;
 	const target=props.target?props.target:"_self";
@@ -16,8 +17,8 @@ const NavLink=(props)=> {
 		"conclusoes-parciais": "c",
 		"referencias-resumidas": "n",
 		"projeto-completo": "f",
-		"wireframe": "w",
-		"mockup": "k"
+		"release-aplicacao": "s",
+		"slides-projeto": "l",
 	}
 	const shortcutKey=shortcutKeys[id];
 	useEffect(()=> {

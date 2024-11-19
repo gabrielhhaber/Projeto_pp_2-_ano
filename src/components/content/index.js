@@ -9,7 +9,6 @@ const Content=(props)=> {
 			<Section title="Resumo">
 				<p>O principal objetivo deste projeto de pesquisa é analisar os fatores por trás da diminuição da acessibilidade de sites e aplicativos na internet, buscando formas de interromper essa queda e conscientizar as empresas sobre a importância desse tema, promovendo uma web mais diversificada e inclusiva.</p>
 				<p>O projeto analisou diversos fatores históricos relacionados ao 
-				funcionamento da web, comparando a forma em que os sites eram desenvolvidos antigamente com as tendências e tecnologias do momento. Também foram consideradas diversas mudanças no setor de tecnologia nos últimos anos, como a ascensão dos smartphones, a popularização da inteligência artificial, o desenvolvimento de ferramentas automatizadas para a criação de sites, a falta de investimento em acessibilidade por parte das empresas, entre outros. Também foram investigados os principais motivos que levam as empresas a não investir em acessibilidade digital, como a falta de resultados significativos a curto prazo, a falta de conhecimento sobre o tema, entre outros.</p>
 				<p>Como forma de tentar diminuir o impacto e dimensão dos problemas encontrados na pesquisa, foi criada a ideia de um portal de avaliação da acessibilidade de diversos sites e apps distintos, com o objetivo de premiar empresas que apresentem interesse e comprometimento na área, além de fornecer uma maneira fácil para que os usuários encontrem plataformas adequadas ao seu uso. O objetivo é incentivar empresas a realizar esforços na área, além de reconhecer esforços que já estão sendo realizados.</p>
 			</Section>
 			<Section title="Problema">
@@ -25,9 +24,10 @@ const Content=(props)=> {
 			</Section>
 			<Section title="Objetivos">
 				<h3>Objetivo geral</h3>
-				<p>entender os principais motivos da diminuição da acessibilidade em sites e apps e como revertê-la.</p>
+				<p>Entender por que a acessibilidade digital tem diminuído em tantas plataformas e como isso pode ser revertido, focando no site de avaliações como principal recurso.</p>
 				<h3>Objetivos específicos</h3>
 				<ol>
+					<li>2.	Investigar as principais mudanças na web que levaram à diminuição da acessibilidade digital.</li>
 					<li>Pesquisar mais sobre o funcionamento das principais ferramentas usadas na criação de sites (Bootstrap, Wordpress, React JS, Angular, entre outras) e verificar se seguem os critérios/padrões adequados.</li>
 					<li>Conscientizar as empresas sobre a necessidade de se criar um site inclusivo e que permita igual acesso a todos.</li>
 					<li>Criar um portal em que serão feitas avaliações de vários sites e apps quanto à acessibilidade, por uma equipe especializada.</li>
@@ -73,38 +73,15 @@ const Content=(props)=> {
 				<p>A aplicação técnica será dividida em diversas páginas distintas, cada uma atendendo a uma funcionalidade específica. Isso inclui uma página de login, uma página de criação de conta, uma página de cadastro de empresa, uma página de rankings, entre outras. O site também está sendo desenvolvido de forma a ser o mais acessível possível para pessoas com todos os tipos de deficiência.</p>
 			</Section>
 			<Section title="Conclusões parciais">
-				<p>Durante a realização deste projeto de pesquisa, foi criado um formulário de pesquisa com o objetivo de avaliar o conhecimento das pessoas da área da programação sobre o tema acessibilidade digital. Esta pesquisa incluiu respostas de diversos públicos distintos, como desenvolvedores, professores ou mesmo entusiastas da área de programação. Ela foi realizada com um total de 44 participantes. Abaixo, estão as principais conclusões obtidas com a pesquisa.</p>
+				<p>Durante a realização deste projeto de pesquisa, um dos passos mais importantes foi a criação de um formulário de pesquisa com o objetivo de avaliar o conhecimento das pessoas da área da programação sobre o tema acessibilidade digital. Esta pesquisa incluiu respostas de diversos públicos distintos, como desenvolvedores, professores ou mesmo entusiastas da área de programação. Ela foi realizada com um total de 44 participantes. Abaixo, estão as principais conclusões obtidas com a pesquisa.</p>
 					<ul>
-						<li>Grande parte dos entrevistados já tinha ouvido falar sobre acessibilidade digital. Isso é algo positivo, considerando o que foi imaginado antes da pesquisa;</li>
-						<li>O número de participantes que nunca realizaram nenhum teste de acessibilidade, embora não seja tão elevado, abrange quase a metade dos participantes, o que ainda pode levar a problemas em muitos sites e apps;</li>
+						<li>Mais de 70% dos entrevistados já tinha ouvido falar sobre acessibilidade digital. Isso é algo positivo, considerando o que foi imaginado antes da pesquisa;</li>
+						<li>O número de participantes que nunca realizaram nenhum teste de acessibilidade, embora não seja tão elevado, abrange quase 50% dos participantes, o que ainda pode levar a problemas em muitos sites e apps;</li>
 						<li>Um indicador bastante positivo foi que, entre os desenvolvedores front-end, 65,6% dos participantes já ouviram falar da especificação ARIA, que contém regras bastante importantes para a acessibilidade digital de sites web. Isso não era esperado antes da realização da pesquisa;</li>
-						<li>Muitos desenvolvedores não possuem nem mesmo o conhecimento para ajudar a melhorar a acessibilidade de um site ou app, o que foi dito por mais da metade dos participantes;</li>
-						<li>A discussão da acessibilidade digital nos times de desenvolvimento varia bastante entre as empresas, com algumas que o discutem e outras que não. Porém, poucos entrevistados disseram que o tema é discutido com frequência dentro das empresas em que trabalham;</li>
+						<li>Muitos desenvolvedores não possuem nem mesmo o conhecimento para ajudar a melhorar a acessibilidade de um site ou app, o que foi dito por mais de 80% dos participantes;</li>
+						<li>A discussão da acessibilidade digital nos times de desenvolvimento varia bastante entre as empresas, com algumas que o discutem e outras que não. Porém, poucos entrevistados disseram que o tema é discutido com frequência dentro das empresas em que trabalham, apenas cerca de 10%;</li>
 					</ul>
-					<p>Os participantes também foram questionados sobre o que seria necessário fazer para melhorar a acessibilidade digital nas empresas em que eles trabalhavam. As principais considerações foram:</p>
-					<ul>
-						<li>Deve haver pessoas capacitadas ou pessoas com deficiência para testar/validar a acessibilidade;</li>
-						<li>Demonstrar a necessidade e importância da inclusão, por exemplo colocar textos explicativos, no caso de um jogo;</li>
-						<li>Conscientização pública, devendo ser replicada pelos times de comunicação da empresa, trazendo o tema para o censo comum;</li>
-						<li>Talvez os contratantes (empresas) não possuam interesse no tema;</li>
-						<li>Aprender a usar coisas mais simples, como texto alternativo em imagens e tags semânticas, pode em muitos casos tirar a necessidade de uso de ferramentas mais avançadas como ARIA;</li>
-						<li>Incentivar o aumento de outros indicadores da empresa (além do lucro);</li>
-						<li>Presenciar os esforços que uma pessoa com deficiência faz para acessar o site ou app;</li>
-						<li>Grandes empresas devem trazer o tema como requisito para vagas de emprego e em seus módulos e certificações;</li>
-						<li>Mais canais e blogs que ensinem sobre o uso do ARIA e outros recursos, material escaço em português e com fácil compreenção;</li>
-					</ul>
-					<p>Por fim, os participantes foram solicitados a deixar algum comentário ou sugestão sobre o tema do formulário. As principais considerações foram:</p>
-					<ul>
-						<li>O questionário deveria ser voltado a designers e não programadores, pois programadores apenas fazem o que é pedido, e designers que fazem sketchs e outros materiais;</li>
-						<li>Um dos participantes tinha um app de dislexia para pessoas com dificuldade de leitura e escrita;</li>
-						<li>Um dos participantes disse que a sua empresa fazia testes de acessibilidade com os 2 tipos de dautonismo (dificuldade ao distinguir vermelho e verde e azul e amarelo);</li>
-						<li>As empresas e equipes de desenvolvimento devem entender que todos têm direito ao acesso, e que limitar o acesso limita a renda;</li>
-						<li>A acessibilidade muitas vezes é proposta pelos times de UX/UI, mas não interessa ao cliente;</li>
-						<li>Muitas vezes os sites são complicados demais, e os desenvolvedores esperam que as ferramentas encontrem todos os erros de acessibilidade;</li>
-						<li>Um deles disse que na sua empresa, a acessibilidade é obrigada por lei (um banco público);</li>
-						<li>Infelizmente a acessibilidade deve ser sim movida pela ganância, dificilmente haverá empatia real de gestores, desenvolvedores ou vendedores;</li>
-						<li>Um dos participantes disse que mesmo não sendo da área do front-end, estuda sobre o tema e busca aplicar a acessibilidade sempre que possível.</li>
-					</ul>
+					<p>Uma outra pesquisa também foi realizada, dessa vez entre as pessoas com deficiência, visando principalmente validar ou não a ideia do projeto Accessibling. Nela, mais de 80% dos participantes classificaram a proposta do projeto como muito boa, o que foi um ótimo indicador para a continuidade do projeto.</p>
 					<p>Como conclusão sobre a pesquisa realizada, pode-se dizer que os indicadores são bastante divididos em relação ao tema, embora alguns deles tenham sido maiores que o esperado. Algo que precisa de mais atenção é a discussão ampla desse tema dentro dos times de desenvolvimento, além de um maior conhecimento e conscientização dos desenvolvedores sobre o tema, como através de treinamentos ou workshops feitos pelas empresas.</p>
 			</Section>
 			<Section title="Referências resumidas">
@@ -125,10 +102,6 @@ const Content=(props)=> {
 				<br/>
 				<p>FILHO, A. G. T. S. SANTOS, G. M. <b>A Ampliação da percepção da interface para pessoas com deficiência visual através de recursos em smartphones: Uma perspectiva do design da informação sobre a acessibilidade digital.</b> Setembro de 2015. Disponível em: <a href="https://www.academia.edu/download/38997604/A_ampliacao_da_percepcao_da_interface_para_pessoas_com_deficiencia_visual_atraves_de_recursos_em_smartphones.pdf">https://www.academia.edu/download/38997604/A_ampliacao_da_percepcao_da_interface_para_pessoas_com_deficiencia_visual_atraves_de_recursos_em_smartphones.pdf</a>. Acesso em: 06/06/2023.</p>
 				<br/>
-			</Section>
-			<Section title="Mockup do projeto">
-				<p>Este mockup foi criado antes da última mudança de nome do projeto. Assim, o nome do projeto está diferente nas páginas dele.</p>
-				<iframe id="mockup-preview" src="https://senacscs.github.io/t2/gabriel/mockup_rastreador_de_acessibilidade/index.html" title="Mockup do site criado no projeto"></iframe>
 			</Section>
 		</div>
 	);

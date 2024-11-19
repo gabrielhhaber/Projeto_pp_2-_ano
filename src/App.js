@@ -8,7 +8,7 @@ const App=(props)=> {
 			<header>
 				<h1 id="top">ACCESSIBLING: dando voz à acessibilidade digital.</h1>
 <p className="author">Por Gabriel Haberkamp</p>
-			<Navigation/>
+				<Navigation/>
 			</header>
 			<main>
 				<Content/>
