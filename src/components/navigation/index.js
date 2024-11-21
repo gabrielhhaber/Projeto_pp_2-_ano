@@ -7,7 +7,7 @@ const Navigation=(props)=> {
 	return (
 		<Box sx={{width: "50%", maxWidth: 250}}>
 			<nav>
-				<List orientation="horizontal">
+				<List>
 					<NavLink id="tema" text="Tema" href="#tema"/>
 					<NavLink id="resumo" text="Resumo" href="#resumo"/>
 					<NavLink id="problema" text="Problema" href="#problema"/>
