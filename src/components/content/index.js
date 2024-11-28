@@ -7,8 +7,8 @@ const Content=(props)=> {
 				<p>Acessibilidade digital em sites e apps.</p>
 			</Section>
 			<Section title="Resumo">
-				<p>O principal objetivo deste projeto de pesquisa é analisar os fatores por trás da diminuição da acessibilidade de sites e aplicativos na internet, buscando formas de interromper essa queda e conscientizar as empresas sobre a importância desse tema, promovendo uma web mais diversificada e inclusiva.</p>
-				<p>O projeto analisou diversos fatores históricos relacionados ao 
+				<p>O principal objetivo deste projeto de pesquisa é analisar os fatores por trás da diminuição da acessibilidade de sites e apps na internet, buscando formas de interromper essa queda e conscientizar as empresas sobre a importância desse tema, promovendo uma web mais diversificada e inclusiva.</p>
+				<p>O projeto analisou diversos fatores históricos relacionados a essa diminuição, como mudanças na web ao longo de sua evolução, fechamento de APIs em sites e apps populares, falta de comprometimento das empresas com o tema, entre outros.</p>
 				<p>Como forma de tentar diminuir o impacto e dimensão dos problemas encontrados na pesquisa, foi criada a ideia de um portal de avaliação da acessibilidade de diversos sites e apps distintos, com o objetivo de premiar empresas que apresentem interesse e comprometimento na área, além de fornecer uma maneira fácil para que os usuários encontrem plataformas adequadas ao seu uso. O objetivo é incentivar empresas a realizar esforços na área, além de reconhecer esforços que já estão sendo realizados.</p>
 			</Section>
 			<Section title="Problema">
